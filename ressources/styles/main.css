@@ -72,6 +72,33 @@ body {
   margin-top: 1rem;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement__list {
+  list-style-position: outside;
+}
+.fonctionnement__list__item {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 28px;
+}
+.fonctionnement__list__item:hover {
+  background-color: rgba(255, 121, 218, 0.2);
+}
+.fonctionnement__list__item:hover .fonctionnement__icon {
+  color: #9356DC;
+}
+.fonctionnement__icon {
+  align-self: center;
+  height: 1rem;
+  width: 1rem;
+  color: grey;
+  margin-right: 1.5rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;

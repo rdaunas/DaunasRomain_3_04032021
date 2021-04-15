@@ -1,0 +1,30 @@
+@use "../utils/_mixins";
+@use '../utils/variables';
+
+.fonctionnement {
+    @include mixins.column-flex;
+    
+    &__list {
+        list-style-position: outside;
+
+        &__item {
+            @include mixins.row-flex;
+            padding: 1rem;
+            border-radius: 28px;
+        }
+        &__item:hover {
+           background-color: fade-out(variables.$secondary-color,0.8);
+            .fonctionnement__icon {
+                color: variables.$primary-color;
+            }
+        }
+    }
+
+    &__icon {
+        align-self: center;
+        height: 1rem;
+        width: 1rem;
+        color: grey;
+        margin-right: 1.5rem;
+    }
+}
