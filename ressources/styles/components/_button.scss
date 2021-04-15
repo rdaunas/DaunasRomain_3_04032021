@@ -1,0 +1,17 @@
+@use "../utils/_mixins";
+
+.button--primary {
+    padding: 1rem;
+    background:linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
+	background-color:#ff79d9;
+	border-radius:28px;
+    box-shadow: 3px 3px 10px rgb(199, 199, 199);
+    width: 70%;
+    align-self: center;
+	color:#ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    
+}
