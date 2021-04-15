@@ -34,6 +34,16 @@ body {
   text-align: center;
 }
 
+.location {
+  background-color: #dbd5d5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.location__icon {
+  margin-right: 15px;
+}
 .footer {
   display: flex;
   flex-direction: column;

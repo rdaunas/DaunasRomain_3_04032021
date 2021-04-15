@@ -1,0 +1,16 @@
+@use "../utils/_mixins";
+
+.location {
+    background-color: rgb(219, 213, 213);
+    @include mixins.row-flex;
+    align-items: center;
+    justify-content: center;
+    
+    &__icon {
+        margin-right: 15px;
+    }
+    &__text {
+        
+    }
+
+}
