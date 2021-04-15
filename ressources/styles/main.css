@@ -44,6 +44,19 @@ body {
 .location__icon {
   margin-right: 15px;
 }
+.app-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px;
+}
+.app-intro__title {
+  text-align: center;
+}
+.app-intro__text {
+  text-align: center;
+}
+
 .footer {
   display: flex;
   flex-direction: column;

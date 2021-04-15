@@ -1,0 +1,15 @@
+@use "../utils/_mixins";
+
+.app-intro {
+    @include mixins.column-flex;
+    justify-content: center;
+    padding: 45px;
+
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+    }
+
+}
