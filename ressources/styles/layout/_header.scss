@@ -1,0 +1,12 @@
+@use "../utils/_mixins";
+
+.header {
+    background-color: white;
+    box-shadow: 0px 2px 10px rgb(192, 189, 189);
+    width: 100%;
+    padding: 10px;
+    &__title{
+        @include mixins.logo-typo;
+        text-align: center;
+    }
+}
