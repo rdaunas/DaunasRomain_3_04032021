@@ -1,0 +1,47 @@
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #3b3a3a;
+  color: white;
+  padding: 30px;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 1rem;
+}
+.footer__icon {
+  margin-right: 7px;
+  margin-top: 5px;
+  height: 1rem;
+  width: 1rem;
+}
+.footer__div {
+  display: flex;
+  flex-direction: row;
+}
+.footer__link {
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

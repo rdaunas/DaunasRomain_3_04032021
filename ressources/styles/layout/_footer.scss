@@ -1,0 +1,24 @@
+@use "../utils/_mixins";
+
+.footer {
+    @include mixins.column-flex;
+    background-color: #3b3a3a;
+    color: white;
+    padding: 30px;
+    &__title {
+        @include mixins.logo-typo;
+        margin-bottom: 1rem;
+    }
+    &__icon {
+        margin-right: 7px;
+        margin-top: 5px;
+        height: 1rem;
+        width: 1rem;
+    }
+    &__div {
+        @include mixins.row-flex;
+    }
+    &__link {
+        margin: 5px 0;
+    }
+}

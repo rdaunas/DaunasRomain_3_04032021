@@ -1,0 +1,11 @@
+@mixin logo-typo {
+    font-family: 'Shrikhand', cursive;
+}
+@mixin row-flex {
+    display: flex;
+    flex-direction: row;
+}
+@mixin column-flex {
+    display: flex;
+    flex-direction: column; 
+}
