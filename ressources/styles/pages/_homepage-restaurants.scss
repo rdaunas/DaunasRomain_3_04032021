@@ -1,0 +1,11 @@
+body {
+    overflow: auto;
+}
+section {
+    padding: 15px;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+}

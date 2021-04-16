@@ -5,7 +5,6 @@
     @include mixins.column-flex;
     
     &__list {
-        list-style-position: outside;
 
         &__item {
             @include mixins.row-flex;
