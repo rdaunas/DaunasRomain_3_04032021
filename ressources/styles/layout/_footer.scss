@@ -5,8 +5,10 @@
     background-color: #3b3a3a;
     color: white;
     padding: 30px;
-    &__title {
-        @include mixins.logo-typo;
+    &__logo {
+        height: 1.5rem;
+        align-self: flex-start;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(283deg) brightness(104%) contrast(101%);
         margin-bottom: 1rem;
     }
     &__icon {

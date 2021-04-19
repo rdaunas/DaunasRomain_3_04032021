@@ -37,12 +37,13 @@ ol {
 
 .header {
   background-color: white;
-  box-shadow: 0px 2px 10px #c0bdbd;
+  box-shadow: 0px 2px 10px #868484;
   padding: 10px;
 }
-.header__title {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
+.header__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .location {
@@ -156,8 +157,10 @@ ol {
   color: white;
   padding: 30px;
 }
-.footer__title {
-  font-family: "Shrikhand", cursive;
+.footer__logo {
+  height: 1.5rem;
+  align-self: flex-start;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(283deg) brightness(104%) contrast(101%);
   margin-bottom: 1rem;
 }
 .footer__icon {
