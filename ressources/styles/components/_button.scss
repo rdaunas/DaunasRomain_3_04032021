@@ -1,9 +1,10 @@
 @use "../utils/_mixins";
+@use "../utils/variables";
+
 
 .button--primary {
     padding: 1rem;
-    background:linear-gradient(to bottom, #ff79d9 5%, #9256dc 100%);
-	background-color:#ff79d9;
+    background:linear-gradient(to bottom, variables.$secondary-color 5%, variables.$primary-color 100%);
 	border-radius:28px;
     box-shadow: 3px 3px 10px rgb(199, 199, 199);
     width: 70%;
@@ -13,5 +14,10 @@
     font-weight: bold;
     text-align: center;
     margin-top: 1rem;
+
+    &:hover {
+        background: linear-gradient(to bottom, lighten(variables.$secondary-color, 5%) 5%, lighten(variables.$primary-color, 5%) 100%);
+        box-shadow: 3px 10px 10px rgb(199, 199, 199);
+    }
     
 }
