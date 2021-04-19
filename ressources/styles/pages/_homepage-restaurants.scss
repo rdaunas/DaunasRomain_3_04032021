@@ -1,11 +1,12 @@
-body {
-    overflow: auto;
-}
+@use "../utils/_mixins";
 section {
     padding: 15px;
 }
 
 .restaurants {
-    display: flex;
-    flex-direction: column;
+    @include mixins.column-flex;
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
 }

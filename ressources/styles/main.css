@@ -27,6 +27,10 @@ html {
   margin: 0;
 }
 
+ol {
+  padding: 0;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -130,6 +134,20 @@ html {
   align-self: center;
   color: grey;
 }
+.card--nouveau {
+  position: relative;
+}
+.card--nouveau::before {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 .footer {
   display: flex;
@@ -156,10 +174,6 @@ html {
   margin: 5px 0;
 }
 
-body {
-  overflow: auto;
-}
-
 section {
   padding: 15px;
 }
@@ -167,6 +181,9 @@ section {
 .restaurants {
   display: flex;
   flex-direction: column;
+}
+.restaurants__title {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
