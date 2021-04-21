@@ -152,8 +152,12 @@ p {
   color: grey;
 }
 .card__content__description {
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   grid-area: 2/1/3/2;
+  margin-top: 0.5rem;
+  padding-right: 10px;
 }
 .card__content__price {
   grid-area: 2/2/3/3;
@@ -177,8 +181,6 @@ p {
   display: grid;
   grid-template-columns: 10fr 1fr;
   grid-template-rows: 1fr 1fr;
-  overflow: hidden;
-  white-space: nowrap;
   padding: 10px;
 }
 
@@ -231,6 +233,8 @@ main {
   z-index: 10;
   position: relative;
   background-color: #f5efef;
+  display: flex;
+  flex-direction: column;
 }
 .menu__header {
   display: flex;

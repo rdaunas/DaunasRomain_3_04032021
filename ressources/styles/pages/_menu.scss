@@ -12,6 +12,7 @@
     z-index: 10;
     position: relative;
     background-color: rgb(245, 239, 239);
+    @include mixins.column-flex;
 
     &__header {
         @include mixins.row-flex;

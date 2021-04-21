@@ -29,8 +29,12 @@
             color: grey;           
         }
         &__description {
+            overflow: hidden;
+            white-space: nowrap;
             text-overflow: ellipsis;
             grid-area: 2/1/3/2;
+            margin-top: 0.5rem;
+            padding-right: 10px;
         }
         &__price {
             grid-area: 2/2/3/3;
@@ -57,8 +61,6 @@
         display: grid;
         grid-template-columns: 10fr 1fr;
         grid-template-rows: 1fr 1fr; 
-        overflow: hidden;
-        white-space: nowrap; 
         padding: 10px;      
     }
 
