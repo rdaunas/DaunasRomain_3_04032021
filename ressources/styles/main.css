@@ -221,6 +221,18 @@ section {
 }
 .menu__section__title {
   font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.menu__section__title::after {
+  content: "";
+  background-color: #99E2D0;
+  height: 3px;
+  width: 40px;
+  position: absolute;
+  top: 1.5rem;
+  left: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,6 @@
 @use "../utils/mixins";
+@use "../utils/variables";
+
 
 .menu {
     border-top-left-radius: 25px;
@@ -19,6 +21,20 @@
 
         &__title {
             font-size: 1rem;
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+            position: relative;
+
+            &::after {
+                content: "";
+                background-color: variables.$accent-color;
+                height: 3px;
+                width: 40px;
+                position: absolute;
+                top: 1.5rem;
+                left: 0px;
+                
+            }
         }
     }
 }
