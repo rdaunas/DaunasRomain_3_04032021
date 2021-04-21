@@ -1,14 +1,18 @@
 @use "../utils/_mixins";
 
 .header {
+    @include mixins.row-flex;
     background-color: white;
     box-shadow: 0px 2px 10px rgb(173, 171, 171);
-    padding: 10px;
+    padding: 20px;
     position: relative;
     z-index: 10;
     &__logo{
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    &__return-icon {
+        align-self: center;
     }
 }
