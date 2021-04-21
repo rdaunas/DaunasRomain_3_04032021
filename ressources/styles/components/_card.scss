@@ -46,7 +46,10 @@
         }
     }
     &--pictureless {
-        
+        border-radius: 14px;
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
    
 }

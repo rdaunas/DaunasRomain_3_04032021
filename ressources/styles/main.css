@@ -165,6 +165,13 @@ p {
   top: 10px;
   right: 10px;
 }
+.card--pictureless {
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -205,15 +212,23 @@ section {
 }
 
 .menu {
+  padding: 20px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   background-color: white;
+  margin-bottom: 4rem;
+  margin-top: -4rem;
+  z-index: 10;
+  position: absolute;
 }
-.menu__title {
-  font-family: "Shrikhand", sans-serif;
+.menu__header {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+}
+.menu__title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
 }
 .menu__icon {
   margin-left: auto;
@@ -233,6 +248,11 @@ section {
   position: absolute;
   top: 1.5rem;
   left: 0px;
+}
+
+.cover-image {
+  object-fit: cover;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
