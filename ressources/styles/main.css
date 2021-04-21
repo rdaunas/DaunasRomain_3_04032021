@@ -73,7 +73,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
 }
 .app-intro__title {
   text-align: center;
@@ -151,6 +151,13 @@ p {
   align-self: center;
   color: grey;
 }
+.card__content__description {
+  text-overflow: ellipsis;
+  grid-area: 2/1/3/2;
+}
+.card__content__price {
+  grid-area: 2/2/3/3;
+}
 .card--nouveau {
   position: relative;
 }
@@ -170,6 +177,9 @@ p {
   display: grid;
   grid-template-columns: 10fr 1fr;
   grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
 }
 
 .footer {
@@ -199,7 +209,7 @@ p {
   margin: 5px 0;
 }
 
-section {
+main {
   padding: 15px;
 }
 
@@ -219,7 +229,8 @@ section {
   margin-bottom: 4rem;
   margin-top: -4rem;
   z-index: 10;
-  position: absolute;
+  position: relative;
+  background-color: #f5efef;
 }
 .menu__header {
   display: flex;

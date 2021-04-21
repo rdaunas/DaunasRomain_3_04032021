@@ -28,6 +28,13 @@
             align-self: center;
             color: grey;           
         }
+        &__description {
+            text-overflow: ellipsis;
+            grid-area: 2/1/3/2;
+        }
+        &__price {
+            grid-area: 2/2/3/3;
+        }
     }
 
     &--nouveau {
@@ -49,7 +56,11 @@
         border-radius: 14px;
         display: grid;
         grid-template-columns: 10fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+        overflow: hidden;
+        white-space: nowrap; 
+        padding: 10px;      
     }
+
    
 }
