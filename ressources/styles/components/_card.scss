@@ -2,13 +2,19 @@
 @use "../utils/_mixins";
 
 .card {   
-    display: flex;
-    flex-direction: column; 
+    @include mixins.column-flex;
     justify-content: space-between;
     background-color: white;
     border-radius: 28px;
     box-shadow: 5px 5px 10px -8px rgba(88, 87, 87, 0.75);
     margin-bottom: 1rem;
+    
+    @media only screen and (min-width: 600px){
+        width: auto;
+        max-width: 300px;   
+        flex: 0 45%;
+        margin: 15px;    
+    }
 
     &__image {
         border-top-left-radius: 20px;

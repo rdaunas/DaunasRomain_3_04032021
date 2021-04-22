@@ -21,6 +21,11 @@
                 color: variables.$primary-color;
             }
         }
+        @media only screen and (min-width: 600px) {
+            width: 100%;
+            max-width: 500px;
+            align-self: center;
+        }
     }
 
     &__icon {

@@ -64,6 +64,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 .location__icon {
   margin-right: 15px;
@@ -95,6 +96,11 @@ p {
   text-align: center;
   margin-top: 1rem;
 }
+@media only screen and (min-width: 600px) {
+  .button--primary {
+    max-width: 300px;
+  }
+}
 .button--primary:hover {
   background: linear-gradient(to bottom, #ff93e1 5%, #a16be0 100%);
   box-shadow: 3px 10px 10px #c7c7c7;
@@ -118,6 +124,13 @@ p {
 }
 .fonctionnement__list__item:hover .fonctionnement__icon {
   color: #9356DC;
+}
+@media only screen and (min-width: 600px) {
+  .fonctionnement__list {
+    width: 100%;
+    max-width: 500px;
+    align-self: center;
+  }
 }
 .fonctionnement__icon {
   align-self: center;
@@ -149,6 +162,14 @@ p {
   border-radius: 28px;
   box-shadow: 5px 5px 10px -8px rgba(88, 87, 87, 0.75);
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  .card {
+    width: auto;
+    max-width: 300px;
+    flex: 0 45%;
+    margin: 15px;
+  }
 }
 .card__image {
   border-top-left-radius: 20px;
@@ -208,11 +229,22 @@ p {
   color: white;
   padding: 30px;
 }
+@media only screen and (min-width: 600px) {
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+}
 .footer__logo {
   height: 1.5rem;
   align-self: flex-start;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(283deg) brightness(104%) contrast(101%);
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  .footer__logo {
+    align-self: center;
+  }
 }
 .footer__icon {
   margin-right: 7px;
@@ -236,8 +268,20 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 600px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .restaurants__title {
   margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+  .restaurants__title {
+    width: 100%;
+  }
 }
 
 .menu {

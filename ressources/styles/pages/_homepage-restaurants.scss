@@ -6,7 +6,16 @@ main {
 .restaurants {
     @include mixins.column-flex;
 
+    @media only screen and (min-width: 600px) {
+        @include mixins.row-flex;
+        flex-wrap: wrap;
+    }
+
     &__title {
         margin-bottom: 1.5rem;
+
+        @media only screen and (min-width: 600px) {
+            width: 100%;
+        }
     }
 }
