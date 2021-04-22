@@ -5,11 +5,15 @@
     @include mixins.column-flex;
     
     &__list {
+        
 
         &__item {
             @include mixins.row-flex;
             padding: 1rem;
             border-radius: 28px;
+            position: relative;
+            box-shadow: 0 2px 3px 3px rgb(226, 225, 225);
+            margin-bottom: 1.5rem;
         }
         &__item:hover {
            background-color: fade-out(variables.$secondary-color,0.8);
@@ -25,5 +29,19 @@
         width: 1rem;
         color: grey;
         margin-right: 1.5rem;
+        margin-left: 1rem;
+    }
+    &__marker {
+        position: absolute;
+        background-color: variables.$primary-color;
+        height: 1.5rem;
+        width: 1.5rem;
+        top: 10px;
+        left: -5px;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

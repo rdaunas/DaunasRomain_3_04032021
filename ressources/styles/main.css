@@ -109,6 +109,9 @@ p {
   flex-direction: row;
   padding: 1rem;
   border-radius: 28px;
+  position: relative;
+  box-shadow: 0 2px 3px 3px #e2e1e1;
+  margin-bottom: 1.5rem;
 }
 .fonctionnement__list__item:hover {
   background-color: rgba(255, 121, 218, 0.2);
@@ -122,6 +125,20 @@ p {
   width: 1rem;
   color: grey;
   margin-right: 1.5rem;
+  margin-left: 1rem;
+}
+.fonctionnement__marker {
+  position: absolute;
+  background-color: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 10px;
+  left: -5px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
