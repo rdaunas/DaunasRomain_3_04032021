@@ -15,9 +15,6 @@
     text-align: center;
     margin-top: 1rem;
 
-    @media only screen and (min-width: 600px) {
-        max-width: 300px;
-    }
 
     &:hover {
         background: linear-gradient(to bottom, lighten(variables.$secondary-color, 5%) 5%, lighten(variables.$primary-color, 5%) 100%);
