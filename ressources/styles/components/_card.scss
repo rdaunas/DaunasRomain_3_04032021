@@ -8,10 +8,11 @@
     border-radius: 28px;
     box-shadow: 5px 5px 10px -8px rgba(88, 87, 87, 0.75);
     margin-bottom: 1rem;
+    position: relative;
+    
     
     @media only screen and (min-width: 600px){
-        width: auto;
-        max-width: 300px;   
+        min-width: 300px;   
         flex: 0 45%;
         margin: 15px;    
     }
@@ -28,11 +29,32 @@
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
         padding: 16px;
+        
 
         &__icon {
             grid-area: 1 / 2 / 3 / 3;            
             align-self: center;
-            color: grey;           
+            color: grey; 
+            position: relative;
+            height: 1.5rem;
+            width: 1.5rem;
+
+            &--color {
+                position: absolute;
+                left: 0px;
+                top: -3px;
+                z-index: 2;
+                height: 1.5rem;
+                width: 1.5rem;
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                    background: linear-gradient(to top, variables.$secondary-color 5%, variables.$primary-color 100%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                }
+            }
         }
         &__description {
             overflow: hidden;
@@ -49,6 +71,7 @@
 
     &--nouveau {
         position: relative;
+
         &::before {
             content: "Nouveau";
             background-color: variables.$accent-color;

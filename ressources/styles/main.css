@@ -163,11 +163,11 @@ p {
   border-radius: 28px;
   box-shadow: 5px 5px 10px -8px rgba(88, 87, 87, 0.75);
   margin-bottom: 1rem;
+  position: relative;
 }
 @media only screen and (min-width: 600px) {
   .card {
-    width: auto;
-    max-width: 300px;
+    min-width: 300px;
     flex: 0 45%;
     margin: 15px;
   }
@@ -189,6 +189,24 @@ p {
   grid-area: 1/2/3/3;
   align-self: center;
   color: grey;
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.card__content__icon--color {
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  z-index: 2;
+  height: 1.5rem;
+  width: 1.5rem;
+  opacity: 0;
+}
+.card__content__icon--color:hover {
+  opacity: 1;
+  background: linear-gradient(to top, #FF79DA 5%, #9356DC 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .card__content__description {
   overflow: hidden;
