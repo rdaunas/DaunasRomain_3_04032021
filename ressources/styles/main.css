@@ -234,6 +234,17 @@ p {
   grid-template-columns: 10fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 10px;
+  animation: slide-in 1s forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .footer {
