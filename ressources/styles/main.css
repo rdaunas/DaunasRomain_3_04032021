@@ -163,10 +163,8 @@ p {
   margin-bottom: 1rem;
   position: relative;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .card {
-    min-width: 300px;
-    max-width: 400px;
     flex: 0 45%;
     margin: 15px;
   }
@@ -239,8 +237,6 @@ p {
   justify-content: space-between;
   overflow: hidden;
   animation: slide-in 1s forwards;
-  min-width: none;
-  max-width: none;
 }
 .card--pictureless:hover {
   padding-right: 0;
@@ -252,7 +248,7 @@ p {
   transform: rotate(360deg);
 }
 .card__check-element {
-  transform: translateX(80px);
+  transform: translateX(100px);
   transform-origin: right;
   transition-property: transform;
   transition-duration: 1s;
@@ -396,6 +392,10 @@ p {
   .menu__icon {
     margin-left: 50px;
   }
+}
+.menu__section {
+  width: 100%;
+  padding: 10px;
 }
 .menu__section__title {
   font-size: 1rem;

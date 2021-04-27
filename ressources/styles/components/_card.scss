@@ -11,9 +11,7 @@
     position: relative;
     
     
-    @media only screen and (min-width: 600px){
-        min-width: 300px;
-        max-width: 400px;   
+    @media only screen and (min-width: 500px){
         flex: 0 45%;
         margin: 15px;    
     }
@@ -92,9 +90,6 @@
         justify-content: space-between;
         overflow: hidden;
         animation: slide-in 1s forwards;
-        min-width: none;
-        max-width: none;
-        
         
         &:hover {
             padding-right: 0;
@@ -108,7 +103,7 @@
         }
     }
     &__check-element {
-        transform: translateX(80px);
+        transform: translateX(100px);
         transform-origin: right;
         transition-property: transform;
         transition-duration: 1s;        
