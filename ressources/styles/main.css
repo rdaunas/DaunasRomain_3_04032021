@@ -32,6 +32,10 @@ ol {
   padding: 0;
 }
 
+button {
+  border: none;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -191,7 +195,7 @@ p {
 .card__content__icon--color {
   position: absolute;
   left: 0px;
-  top: -3px;
+  top: -2px;
   z-index: 2;
   height: 1.5rem;
   width: 1.5rem;
