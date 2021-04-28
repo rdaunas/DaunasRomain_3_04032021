@@ -247,6 +247,9 @@ p {
 .card--pictureless:hover .card__check-icon {
   transform: rotate(360deg);
 }
+.card--pictureless:hover .card__grid {
+  width: 80%;
+}
 .card__check-element {
   transform: translateX(100px);
   transform-origin: right;
@@ -271,6 +274,8 @@ p {
   padding: 10px;
   grid-template-columns: 10fr 1fr;
   grid-template-rows: 1fr 1fr;
+  width: 100%;
+  transition: width 1s;
 }
 @keyframes slide-in {
   from {
