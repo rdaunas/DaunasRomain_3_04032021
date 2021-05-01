@@ -371,7 +371,8 @@ p {
   justify-content: center;
   height: 150px;
   width: 150px;
-  animation: 0.3s 3s ease-out forwards vanish;
+  border-radius: 24px;
+  animation: 0.2s 3s ease-out forwards vanish;
 }
 .loader__title {
   margin: 10px 50%;
@@ -380,6 +381,7 @@ p {
   align-self: center;
   height: 50px;
   width: 10px;
+  border-radius: 5px;
   background: linear-gradient(to bottom, #FF79DA 5%, #9356DC 100%);
   margin: 5px;
   transform: scaleY(1);
