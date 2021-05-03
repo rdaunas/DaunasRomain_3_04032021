@@ -215,6 +215,7 @@ p {
   opacity: 1;
   background: linear-gradient(to top, #FF79DA 5%, #9356DC 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 .card__content__description {
