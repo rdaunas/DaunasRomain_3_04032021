@@ -6,6 +6,14 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
+
+    &__title {
+        display: none;
+    }
+    &__text {
+        background-color: rgb(230, 229, 229);
+        border: none;
+    }
     
     &__icon {
         margin-right: 15px;
