@@ -171,7 +171,6 @@ p {
   background-color: white;
   border-radius: 28px;
   box-shadow: 5px 5px 10px -8px rgba(88, 87, 87, 0.75);
-  margin-bottom: 1rem;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -244,10 +243,8 @@ p {
   right: 10px;
 }
 .card--pictureless {
+  position: relative;
   border-radius: 14px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   overflow: hidden;
   animation: slide-in 1s forwards;
 }
@@ -261,15 +258,18 @@ p {
   transform: rotate(360deg);
 }
 .card--pictureless:hover .card__grid {
-  width: 80%;
+  width: 70%;
 }
 .card__check-element {
-  transform: translateX(100px);
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
   transform-origin: right;
   transition-property: transform;
   transition-duration: 1s;
   background-color: #99E2D0;
-  width: 20%;
+  height: 100%;
+  width: 74px;
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
   display: flex;
@@ -285,9 +285,9 @@ p {
 .card__grid {
   display: grid;
   padding: 10px;
-  grid-template-columns: 10fr 1fr;
+  grid-template-columns: 11fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 100%;
+  width: 90%;
   transition: width 1s;
 }
 @keyframes slide-in {
@@ -496,7 +496,6 @@ p {
 }
 .menu__section {
   width: 100%;
-  padding: 10px;
 }
 .menu__section__title {
   font-size: 1rem;
