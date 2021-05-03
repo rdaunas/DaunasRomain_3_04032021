@@ -7,13 +7,11 @@
     background: linear-gradient(to top, variables.$primary-color 5%, variables.$secondary-color 100%);
 	border-radius:28px;
     box-shadow: 3px 3px 10px rgb(199, 199, 199);
-    width: 70%;
+    width: 60%;
     align-self: center;
 	color:#ffffff;
-    font-size: 1.2rem;
-    font-weight: bold;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
 
     &:hover {

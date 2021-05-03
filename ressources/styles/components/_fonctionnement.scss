@@ -6,6 +6,7 @@
     
     &__list {
         
+        margin-bottom: 6rem;
 
         &__item {
             @include mixins.row-flex;
@@ -14,6 +15,7 @@
             position: relative;
             box-shadow: 0 2px 3px 3px rgb(226, 225, 225);
             margin-bottom: 1.5rem;
+            margin: 2.4rem 0;
         }
         &__item:hover {
            background-color: fade-out(variables.$secondary-color,0.8);

@@ -9,6 +9,7 @@
     box-shadow: 5px 5px 10px -8px rgba(88, 87, 87, 0.75);
     margin-bottom: 1rem;
     position: relative;
+    margin-bottom: 2rem;
     
     
     @media only screen and (min-width: 500px){
@@ -20,14 +21,14 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         object-fit: cover;
-        max-height: 200px;
+        max-height: 180px;
     }
     &__content {
         display: grid;
         grid-template-columns: 9fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        padding: 16px;
+        gap: 10px 0px;
+        padding: 12px;
         
 
         &__icon {

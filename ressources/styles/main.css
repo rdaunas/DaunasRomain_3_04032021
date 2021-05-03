@@ -87,9 +87,11 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  margin-bottom: 5rem;
 }
 .app-intro__title {
   text-align: center;
+  margin-bottom: 1rem;
 }
 .app-intro__text {
   text-align: center;
@@ -100,13 +102,11 @@ p {
   background: linear-gradient(to top, #9356DC 5%, #FF79DA 100%);
   border-radius: 28px;
   box-shadow: 3px 3px 10px #c7c7c7;
-  width: 70%;
+  width: 60%;
   align-self: center;
   color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: bold;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .button--primary:hover {
   background: linear-gradient(to top, #a16be0 5%, #ff93e1 100%);
@@ -117,6 +117,9 @@ p {
   display: flex;
   flex-direction: column;
 }
+.fonctionnement__list {
+  margin-bottom: 6rem;
+}
 .fonctionnement__list__item {
   display: flex;
   flex-direction: row;
@@ -125,6 +128,7 @@ p {
   position: relative;
   box-shadow: 0 2px 3px 3px #e2e1e1;
   margin-bottom: 1.5rem;
+  margin: 2.4rem 0;
 }
 .fonctionnement__list__item:hover {
   background-color: rgba(255, 121, 218, 0.2);
@@ -169,6 +173,7 @@ p {
   box-shadow: 5px 5px 10px -8px rgba(88, 87, 87, 0.75);
   margin-bottom: 1rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 @media only screen and (min-width: 500px) {
   .card {
@@ -180,14 +185,14 @@ p {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
-  max-height: 200px;
+  max-height: 180px;
 }
 .card__content {
   display: grid;
   grid-template-columns: 9fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  padding: 16px;
+  gap: 10px 0px;
+  padding: 12px;
 }
 .card__content__icon {
   grid-area: 1/2/3/3;
