@@ -243,13 +243,12 @@ p {
   right: 10px;
 }
 .card--pictureless {
+  display: block;
   position: relative;
   border-radius: 14px;
+  padding: 10px;
   overflow: hidden;
   animation: slide-in 1s forwards;
-}
-.card--pictureless:hover {
-  padding-right: 0;
 }
 .card--pictureless:hover .card__check-element {
   transform: translateX(0px);
@@ -258,11 +257,12 @@ p {
   transform: rotate(360deg);
 }
 .card--pictureless:hover .card__grid {
-  width: 70%;
+  width: 80%;
 }
 .card__check-element {
   position: absolute;
   right: 0;
+  top: 0;
   transform: translateX(100%);
   transform-origin: right;
   transition-property: transform;
@@ -284,10 +284,9 @@ p {
 }
 .card__grid {
   display: grid;
-  padding: 10px;
+  width: 100%;
   grid-template-columns: 11fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 90%;
   transition: width 1s;
 }
 @keyframes slide-in {
