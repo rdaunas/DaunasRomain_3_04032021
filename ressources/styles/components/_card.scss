@@ -111,8 +111,6 @@
         right: 0;
         top: 0;
         transform: translateX(100%);
-        transform-origin: right;
-
         transition-property: transform;
         transition-duration: 1s;   
 
@@ -123,8 +121,6 @@
         border-bottom-right-radius: 14px;
         display: flex;
         justify-content: center;
-        flex-shrink: 120;
-
     }
     &__check-icon {
         align-self: center;
