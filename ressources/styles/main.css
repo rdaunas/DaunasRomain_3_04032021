@@ -504,6 +504,7 @@ p {
 }
 .menu__section {
   width: 100%;
+  margin-bottom: 3rem;
 }
 .menu__section__title {
   font-size: 1rem;
@@ -520,24 +521,24 @@ p {
   top: 1.5rem;
   left: 0px;
 }
-.menu__section:nth-child(n) {
+.menu__section {
   opacity: 0;
 }
-.menu__section:nth-child(n):nth-child(1) {
-  animation: slide-in 1s forwards;
-  animation-delay: -0.5s;
-}
-.menu__section:nth-child(n):nth-child(2) {
+.menu__section:nth-child(2) {
   animation: slide-in 1s forwards;
   animation-delay: 0s;
 }
-.menu__section:nth-child(n):nth-child(3) {
+.menu__section:nth-child(3) {
   animation: slide-in 1s forwards;
   animation-delay: 0.5s;
 }
-.menu__section:nth-child(n):nth-child(4) {
+.menu__section:nth-child(4) {
   animation: slide-in 1s forwards;
   animation-delay: 1s;
+}
+.menu__section:nth-child(5) {
+  animation: slide-in 1s forwards;
+  animation-delay: 1.5s;
 }
 
 .cover-image {
