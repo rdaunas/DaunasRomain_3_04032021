@@ -174,7 +174,7 @@ p {
   position: relative;
   margin-bottom: 2rem;
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   .card {
     flex: 0 45%;
     margin: 15px;
@@ -209,6 +209,8 @@ p {
   height: 1.5rem;
   width: 1.5rem;
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
 .card__content__icon--color:hover {
   opacity: 1;
@@ -248,7 +250,6 @@ p {
   border-radius: 14px;
   padding: 10px;
   overflow: hidden;
-  animation: slide-in 1s forwards;
 }
 .card--pictureless:hover .card__check-element {
   transform: translateX(0px);
@@ -257,7 +258,7 @@ p {
   transform: rotate(360deg);
 }
 .card--pictureless:hover .card__grid {
-  width: 80%;
+  width: 75%;
 }
 .card__check-element {
   position: absolute;
@@ -518,6 +519,25 @@ p {
   position: absolute;
   top: 1.5rem;
   left: 0px;
+}
+.menu__section:nth-child(n) {
+  opacity: 0;
+}
+.menu__section:nth-child(n):nth-child(1) {
+  animation: slide-in 1s forwards;
+  animation-delay: -0.5s;
+}
+.menu__section:nth-child(n):nth-child(2) {
+  animation: slide-in 1s forwards;
+  animation-delay: 0s;
+}
+.menu__section:nth-child(n):nth-child(3) {
+  animation: slide-in 1s forwards;
+  animation-delay: 0.5s;
+}
+.menu__section:nth-child(n):nth-child(4) {
+  animation: slide-in 1s forwards;
+  animation-delay: 1s;
 }
 
 .cover-image {

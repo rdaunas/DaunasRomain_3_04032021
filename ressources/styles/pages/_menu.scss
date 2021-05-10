@@ -60,5 +60,9 @@
             }
         }
     }
+    &__section:nth-child(n) {
+        opacity: 0;        
+        @include mixins.cascadin-slide-in;
+    }
 }
 
